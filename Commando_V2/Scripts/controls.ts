@@ -6,4 +6,5 @@ module controls {
     export var right: boolean = false;
     export var rTally: number = 0;
     export var lTally: number = 0;
+    export var shooting: boolean = false;
 } 

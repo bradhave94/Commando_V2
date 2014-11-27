@@ -92,6 +92,8 @@ var objects;
                     controls.lTally = 0;
                     break;
                 case keys.SPACEBAR:
+                    controls.shooting = true;
+                    break;
                 case keys.W:
                 case keys.UP:
                     controls.jumping = true;
@@ -110,6 +112,8 @@ var objects;
                     controls.right = false;
                     break;
                 case keys.SPACEBAR:
+                    controls.shooting = false;
+                    break;
                 case keys.W:
                 case keys.UP:
                     controls.jumping = false;
@@ -140,6 +144,9 @@ var objects;
             /*     if (e.paused) {
             return;
             } */
+            if (controls.shooting) {
+            }
+
             // Get the current position of our Hero
             position = this.body.GetPosition();
 
