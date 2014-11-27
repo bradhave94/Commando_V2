@@ -14,7 +14,7 @@ module objects {
         width: number;
         height: number;
         lastJumpTime: number;
-        MAX_SPEED: number = 30;
+        MAX_SPEED: number = 2;
         JUMP_TIMEOUT: number = 1000 // 1 second
         JUMP_HEIGHT: number = 40;
         constructor() {
