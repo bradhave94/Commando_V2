@@ -48,63 +48,18 @@
         }
     };
 
-    var enemyData = {
-        "images": ["assets/images/enemy/enemyAtlas.png"],
+    var dragonData = {
+        "images": ["Assets/Images/Dragon/dragon.png"],
         "frames": [
-            [162, 564, 60, 119],
-            [2, 2, 81, 145],
-            [85, 2, 81, 145],
-            [168, 2, 81, 145],
-            [2, 149, 81, 145],
-            [85, 149, 81, 145],
-            [168, 149, 81, 145],
-            [2, 296, 78, 132],
-            [82, 296, 78, 132],
-            [82, 296, 78, 132],
-            [162, 296, 78, 132],
-            [2, 430, 78, 132],
-            [2, 430, 78, 132],
-            [2, 564, 78, 132],
-            [82, 430, 78, 132],
-            [82, 430, 78, 132],
-            [82, 564, 78, 132],
-            [162, 430, 78, 132],
-            [162, 430, 78, 132]
+            [296, 2, 96, 73],
+            [2, 2, 96, 84],
+            [100, 2, 96, 84],
+            [198, 2, 96, 81]
         ],
         "animations": {
-            "enemyIdle": {
-                frames: [0],
-                speed: 0.5
-            },
-            "enemyJump": {
-                frames: [1, 6],
-                speed: 0.5
-            },
-            "enemyWalk": {
-                frames: [7, 18],
-                speed: 0.5
-            }
-        }
-    };
-
-    var coinData = {
-        "images": ["assets/images/coin/coinAtlas.png"],
-        "frames": [
-            [2, 2, 44, 40],
-            [48, 2, 44, 40],
-            [94, 2, 44, 40],
-            [140, 2, 44, 40],
-            [186, 2, 44, 40],
-            [232, 2, 44, 40],
-            [278, 2, 44, 40],
-            [324, 2, 44, 40],
-            [370, 2, 44, 40],
-            [416, 2, 44, 40]
-        ],
-        "animations": {
-            "coin": {
-                frames: [0, 9],
-                speed: 0.5
+            "dragon": {
+                frames: [0, 1, 2, 3],
+                speed: 0.2
             }
         }
     };
@@ -202,8 +157,7 @@
             this.loader.loadManifest(assetManifest);
 
             this.heroAtlas = new createjs.SpriteSheet(managers.heroData);
-            this.enemyAtlas = new createjs.SpriteSheet(enemyData);
-            this.coinAtlas = new createjs.SpriteSheet(coinData);
+            this.enemyAtlas = new createjs.SpriteSheet(dragonData);
             this.bitMapFont = new createjs.SpriteSheet(bitMapFontData);
         };
         return Assets;

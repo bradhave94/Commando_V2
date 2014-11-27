@@ -1,0 +1,29 @@
+{
+"images": ["flame.png"],
+"frames": [
+
+    [2, 2, 56, 18], 
+    [60, 2, 56, 18], 
+    [118, 2, 56, 18], 
+    [176, 2, 56, 18], 
+    [234, 2, 56, 18], 
+    [292, 2, 56, 18], 
+    [350, 2, 56, 18], 
+    [408, 2, 56, 18]
+],
+"animations": {
+    
+        "flame1":[0], 
+        "flame2":[1], 
+        "flame3":[2], 
+        "flame4":[3], 
+        "flame5":[4], 
+        "flame6":[5], 
+        "flame7":[6], 
+        "flame8":[7]
+},
+"texturepacker": [
+        "SmartUpdateHash: $TexturePacker:SmartUpdate:70eaec76cbeb9b59d9242de19bbbba6f:7e584a345e60001e5b79a180e85f00a7:5e5e23da6a1570af4436a7b0ea6927ea$",
+        "Created with TexturePacker (http://www.texturepacker.com) for EaselJS"
+]
+}

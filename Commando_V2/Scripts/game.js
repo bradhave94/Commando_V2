@@ -9,6 +9,7 @@
 /// <reference path="objects/platform.ts" />
 /// <reference path="objects/hero.ts" />
 /// <reference path="objects/enemy.ts" />
+/// <reference path="objects/dragon.ts" />
 /// <reference path="objects/coin.ts" />
 // Game Variables
 var arcadeCanvas;
@@ -24,8 +25,10 @@ var reality;
 
 // Game Objects
 var hero;
-var coin;
+
+var dragons = [];
 var scoreboard;
+var DRAGON_NUM = 2;
 
 function preload() {
     managers.Assets.init();
@@ -49,6 +52,10 @@ function gameLoop(event) {
         this.stats.begin();
     }
     hero.update();
+    for (var count = 0; count < DRAGON_NUM; count++) {
+        dragons[count].update();
+    }
+
     if (controls.right == true) {
         level.image.x -= 5;
     }
@@ -81,7 +88,7 @@ function gameStart() {
     var leftWall = new objects.Platform(0, 0, 1, 40);
     stage.addChild(leftWall.view);
 
-    var rightWall = new objects.Platform(1020, 0, 1, 40);
+    var rightWall = new objects.Platform(34.5, 0, 1, 40);
     stage.addChild(rightWall.view);
 
     level = new objects.Level();
@@ -97,6 +104,10 @@ function gameStart() {
     //stage.addChild(platform4.view);
     hero = new objects.Hero();
     stage.addChild(hero.view);
+
+    for (var count = 0; count < DRAGON_NUM; count++) {
+        dragons[count] = new objects.Dragon();
+    }
 
     //  scoreboard = new objects.Scoreboard();
     var fixDef = new box2d.b2FixtureDef;

@@ -66,6 +66,16 @@
     <Content Include="Assets\fonts\Dock51.woff2" />
     <Content Include="Assets\Images\Dragon\dragon.json" />
     <Content Include="Assets\Images\Dragon\dragon.tps" />
+    <Content Include="Assets\Images\Flame\flame.png" />
+    <Content Include="Assets\Images\Flame\flame1.png" />
+    <Content Include="Assets\Images\Flame\flame2.png" />
+    <Content Include="Assets\Images\Flame\flame3.png" />
+    <Content Include="Assets\Images\Flame\flame4.png" />
+    <Content Include="Assets\Images\Flame\flame5.png" />
+    <Content Include="Assets\Images\Flame\flame6.png" />
+    <Content Include="Assets\Images\Flame\flame7.png" />
+    <Content Include="Assets\Images\Flame\flame8.png" />
+    <Content Include="Assets\Images\Flame\sprites.png" />
     <Content Include="Assets\Images\Grenade\grenade.json" />
     <Content Include="Assets\Images\Grenade\grenade.tps" />
     <Content Include="Assets\Images\Grenade\Thumbs.db" />
@@ -99,6 +109,9 @@
     <Content Include="Scripts\objects\platform.js.map" />
     <Content Include="Scripts\objects\reality.js.map" />
     <Content Include="Scripts\objects\scoreboard.js.map" />
+    <Content Include="Assets\Images\Flame\flame.json" />
+    <Content Include="Assets\Images\Flame\flame.tps" />
+    <Content Include="Assets\Images\Flame\Thumbs.db" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -292,6 +305,7 @@
     <TypeScriptCompile Include="Scripts\lib\tweenjs.d.ts" />
     <TypeScriptCompile Include="Scripts\managers\asset.ts" />
     <TypeScriptCompile Include="Scripts\objects\coin.ts" />
+    <TypeScriptCompile Include="Scripts\objects\Dragon.ts" />
     <TypeScriptCompile Include="Scripts\objects\enemy.ts" />
     <TypeScriptCompile Include="Scripts\objects\hero.ts" />
     <TypeScriptCompile Include="Scripts\objects\label.ts" />

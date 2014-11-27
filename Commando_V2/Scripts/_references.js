@@ -24,6 +24,7 @@
 /// <reference path="managers/asset.js" />
 /// <reference path="objects/coin.js" />
 /// <reference path="objects/enemy.js" />
+/// <reference path="objects/Dragon.js" />
 /// <reference path="objects/hero.js" />
 /// <reference path="objects/label.js" />
 /// <reference path="objects/Level.js" />

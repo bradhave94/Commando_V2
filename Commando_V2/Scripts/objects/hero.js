@@ -7,7 +7,7 @@ var objects;
 (function (objects) {
     var Hero = (function () {
         function Hero() {
-            this.MAX_SPEED = 30;
+            this.MAX_SPEED = 2;
             this.JUMP_TIMEOUT = 1000;
             this.JUMP_HEIGHT = 40;
             // Set our Hero controls initially to false

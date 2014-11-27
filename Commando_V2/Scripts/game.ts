@@ -9,6 +9,7 @@
 /// <reference path="objects/platform.ts" />
 /// <reference path="objects/hero.ts" />
 /// <reference path="objects/enemy.ts" />
+/// <reference path="objects/dragon.ts" />
 /// <reference path="objects/coin.ts" />
 
 // Game Variables
@@ -25,8 +26,11 @@ var reality: objects.Reality;
 
 // Game Objects
 var hero: objects.Hero;
-var coin: objects.Coin;
+
+var dragons = [];
 var scoreboard: objects.Scoreboard;
+var DRAGON_NUM = 2;
+
 
 function preload(): void {
     managers.Assets.init();
@@ -50,8 +54,11 @@ function gameLoop(event): void {
         this.stats.begin();
     } 
     hero.update();
-    if (controls.right == true) {
-        
+    for (var count = 0; count < DRAGON_NUM; count++) {
+        dragons[count].update();
+    }
+    
+    if (controls.right == true) {   
         level.image.x -= 5;
     }
 
@@ -87,7 +94,7 @@ function gameStart(): void {
     var leftWall = new objects.Platform(0, 0, 1, 40);
     stage.addChild(leftWall.view);
 
-    var rightWall = new objects.Platform(1020, 0, 1, 40);
+    var rightWall = new objects.Platform(34.5, 0, 1, 40);
     stage.addChild(rightWall.view);
 
     level = new objects.Level();
@@ -106,6 +113,11 @@ function gameStart(): void {
 
     hero = new objects.Hero();
     stage.addChild(hero.view);
+
+    
+    for (var count = 0; count < DRAGON_NUM; count++) {
+        dragons[count] = new objects.Dragon();  
+    }
 
   //  scoreboard = new objects.Scoreboard();
 
